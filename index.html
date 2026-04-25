@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Student Management System</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6f9;
+text-align:center;
+}
+
+.header{
+background:#2c3e50;
+color:white;
+padding:20px;
+font-size:28px;
+position:relative;
+}
+
+.menu{
+position:absolute;
+left:20px;
+top:22px;
+font-size:26px;
+cursor:pointer;
+}
+
+.dropdown{
+display:none;
+background:white;
+width:200px;
+margin:auto;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+border-radius:6px;
+}
+
+.dropdown button{
+width:100%;
+padding:12px;
+border:none;
+background:white;
+cursor:pointer;
+}
+
+.dropdown button:hover{
+background:#ecf0f1;
+}
+
+.counter{
+font-size:20px;
+margin-top:15px;
+color:#2c3e50;
+}
+
+.mainButtons{
+margin-top:20px;
+}
+
+.mainButtons button{
+padding:12px 20px;
+margin:10px;
+border:none;
+background:#3498db;
+color:white;
+font-size:15px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.mainButtons button:hover{
+background:#2c3e50;
+}
+
+table{
+margin:auto;
+margin-top:20px;
+border-collapse:collapse;
+width:80%;
+}
+
+th{
+background:#2c3e50;
+color:white;
+padding:10px;
+}
+
+td{
+border:1px solid #ddd;
+padding:10px;
+}
+
+input{
+padding:10px;
+margin:6px;
+width:220px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<span class="menu" onclick="toggleMenu()">
+<i class="fa-solid fa-bars"></i>
+</span>
+
+<i class="fa-solid fa-graduation-cap"></i>
+Student Management System
+
+</div>
+
+
+<div id="menuOptions" class="dropdown">
+
+<button onclick="showCourses()">
+<i class="fa-solid fa-book"></i> View Courses
+</button>
+
+<button onclick="showDepartments()">
+<i class="fa-solid fa-building"></i> View Departments
+</button>
+
+</div>
+
+
+<div class="counter">
+Total Students: <span id="totalStudents">0</span>
+</div>
+
+
+<div class="mainButtons">
+
+<button onclick="showAllStudents()">
+<i class="fa-solid fa-users"></i> All Students
+</button>
+
+<button onclick="showAdd()">
+<i class="fa-solid fa-user-plus"></i> Add Student
+</button>
+
+<button onclick="showSearch()">
+<i class="fa-solid fa-search"></i> Search Student
+</button>
+
+<button onclick="showDelete()">
+<i class="fa-solid fa-trash"></i> Delete Student
+</button>
+
+<button onclick="showGrades()">
+<i class="fa-solid fa-chart-line"></i> View Grades
+</button>
+
+</div>
+
+<div id="content"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
