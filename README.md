@@ -89,6 +89,22 @@ student-management-system/
 - grade  
 
 ---
+## 📊 Project Outputs
+
+### Output 1: View All Students
+![Output 1](output1.png)
+
+### Output 2: Add Student
+![Output 2](output2.png)
+
+### Output 3: Delete Student
+![Output 3](output3.png)
+
+### Output 4: Update Student
+![Output 4](output4.png)
+
+### Output 5: Search Student
+![Output 5](output5.png)
 
 ## 🔍 Sample Queries
 
@@ -125,3 +141,5 @@ node server.js
 Open browser and go to:
 
 http://localhost:3000
+
+
