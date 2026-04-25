@@ -100,11 +100,8 @@ student-management-system/
 ### Output 3: Delete Student
 ![Output 3](output3.png)
 
-### Output 4: Update Student
+### Output 4: Search Student
 ![Output 4](output4.png)
-
-### Output 5: Search Student
-![Output 5](output5.png)
 
 ## 🔍 Sample Queries
 
